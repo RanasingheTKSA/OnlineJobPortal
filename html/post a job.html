@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETJOBS.LK (post a job)</title>
+	<link rel="stylesheet" href="../styles/style.css">
+	<script src="../js/myscript.js"></script>
+
+<script>
+	function passvalue()
+{
+    var jobtitle = document.getElementById ("jobtitle").Value;
+    localStorage.setItem ("textvalue",jobtitle);
+    return false;
+
+}
+</script>
+
+</head>
+
+
+<body>
+	<header>
+      <a href="#"><img class="logo" src=../images/getjobs.png alt="logo" hight="600" width="250"></a>
+     	 <nav>
+      	  	<ul class="navg">
+         		<li><a href="home.html"><button>HOME</button></a></li>
+         	 	<li><a href="#"><button>BROWSE JOB</button></a></li>
+         	 	<li><a href="#"><button>POST A JOB</button></a></li>
+         	 	<li><a href="#"><button>CONTACT US</button></a></li>
+         	 	<li><a href="about us.html"><button>ABOUT US</button></a></li>
+       	 	</ul>
+		 </nav>
+
+     		<div class="other">
+       			<a href="#"><img class="notification" src=../images/notification.png alt="logo" hight="40px" width="40px" ></a>
+      			<a href="#"><img class="profile" src=../images/profile.png alt="logo" hight="80px" width="80px"></a>
+    		</div>
+	</header>
+
+<center>
+	<table border = "5" style = "width:100%">
+		<tr class="tr">
+			<th>
+				<h2>POST A JOB </h2>
+			</th>
+		</tr>
+	</table><br>
+</center>
+
+<div class = "form">
+<div class = "productdata">
+<form class = "productdata1" action = "../PHP/connectfile.php" method="POST" enctype="multipart/form-data">
+
+	<label> <b>YOUR EMAIL</b> </label><br>
+	<input type = "text" id = "email" name = "email" class = "st1" pattern = "[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,3}"placeholder = "you@domain.com" required> <br><br>
+
+	<label> <b>JOB TITLE </b></label>
+	<input type = "text" id = "jobtitle" name="jobtitle" class = "st1" placeholder = "Job Title" required onclick="passvalue()"> <br><br>
+
+	<table style = "width:100%">
+		<tr>
+			<th align = "left" style = "width:50%">
+				<label> SELECT JOB REGION  </label><br>
+			</th>
+			<th align = "left" style = "width:50%">
+				<label> MONTHLY SALARY(Rs) </label><br>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<input type = "radio" id = "jobregion" name = "jobregion" value = "L" checked required> Local
+				<input type = "radio" id = "jobregion" name = "jobregion" value = "F"required> Foreign <br><br>
+			</td>
+			<td>
+				<input type = "text" id = "salary" name = "salary1" class = "st2" placeholder = "Minimum Salary">
+				<input type = "text" id = "salary" name = "salary2" class = "st2" placeholder = "Maximum Salary"><br><br>
+			</td>
+		</tr>
+
+		<tr>
+			<th align = "left">
+				<label> LOCATION </label>
+			</th>
+			<th align = "left">
+				<label> JOB CATEGORY </label>
+			</th>
+		</tr>
+
+		<tr>
+			<td>
+				<select class = "select1" name="location">
+					<option>select your location</option> <br>
+					<option>Afghanistan</option>
+					<option>Åland Islands</option>
+					<option>Albania</option>
+					<option>Algeria</option>
+					<option>American Samoa</option>
+					<option>Andorra</option>
+					<option>Angola</option>
+					<option>Anguilla</option>
+					<option>Antarctica</option>
+					<option>Antigua and Barbuda</option>
+					<option>Argentina</option>
+					<option>Armenia</option>
+					<option>Aruba</option>
+					<option>Australia</option>
+					<option>Austria</option>
+					<option>Azerbaijan</option>
+					<option>Bahamas</option>
+					<option>Bahrain</option>
+					<option>Bangladesh</option>
+					<option>Barbados</option>
+					<option>Belarus</option>
+					<option>Belgium</option>
+					<option>Belize</option>
+					<option>Benin</option>
+					<option>Bermuda</option>
+					<option>Bhutan</option>
+					<option>Bolivia, Plurinational State of</option>
+					<option>Bonaire, Sint Eustatius and Saba</option>
+					<option>Bosnia and Herzegovina</option>
+					<option>Botswana</option>
+					<option>Bouvet Island</option>
+					<option>Brazil</option>
+					<option>British Indian Ocean Territory</option>
+					<option>Brunei Darussalam</option>
+					<option>Bulgaria</option>
+					<option>Burkina Faso</option>
+					<option>Burundi</option>
+					<option>Cambodia</option>
+					<option>Cameroon</option>
+					<option>Canada</option>
+					<option>Cape Verde</option>
+					<option>Cayman Islands</option>
+					<option>Central African Republic</option>
+					<option>Chad</option>
+					<option>Chile</option>
+					<option>China</option>
+					<option>Christmas Island</option>
+					<option>Cocos (Keeling) Islands</option>
+					<option>Colombia</option>
+					<option>Comoros</option>
+					<option>Congo</option>
+					<option>Congo, the Democratic Republic of the</option>
+					<option>Cook Islands</option>
+					<option>Costa Rica</option>
+					<option>Côte d'Ivoire</option>
+					<option>Croatia</option>
+					<option>Cuba</option>
+					<option>Curaçao</option>
+					<option>Cyprus</option>
+					<option>Czech Republic</option>
+					<option>Denmark</option>
+					<option>Djibouti</option>
+					<option>Dominica</option>
+					<option>Dominican Republic</option>
+					<option>Ecuador</option>
+					<option>Egypt</option>
+					<option>El Salvador</option>
+					<option>Equatorial Guinea</option>
+					<option>Eritrea</option>
+					<option>Estonia</option>
+					<option>Ethiopia</option>
+					<option>Falkland Islands (Malvinas)</option>
+					<option>Faroe Islands</option>
+					<option>Fiji</option>
+					<option>Finland</option>
+					<option>France</option>
+					<option>French Guiana</option>
+					<option>French Polynesia</option>
+					<option>French Southern Territories</option>
+					<option>Gabon</option>
+					<option>Gambia</option>
+					<option>Georgia</option>
+					<option>Germany</option>
+					<option>Ghana</option>
+					<option>Gibraltar</option>
+					<option>Greece</option>
+					<option>Greenland</option>
+					<option>Grenada</option>
+					<option>Guadeloupe</option>
+					<option>Guam</option>
+					<option>Guatemala</option>
+					<option>Guernsey</option>
+					<option>Guinea</option>
+					<option>Guinea-Bissau</option>
+					<option>Guyana</option>
+					<option>Haiti</option>
+					<option>Heard Island and McDonald Islands</option>
+					<option>Holy See (Vatican City State)</option>
+					<option>Honduras</option>
+					<option>Hong Kong</option>
+					<option>Hungary</option>
+					<option>Iceland</option>
+					<option>India</option>
+					<option>Indonesia</option>
+					<option>Iran, Islamic Republic of</option>
+					<option>Iraq</option>
+					<option>Ireland</option>
+					<option>Isle of Man</option>
+					<option>Israel</option>
+					<option>Italy</option>
+					<option>Jamaica</option>
+					<option>Japan</option>
+					<option>Jersey</option>
+					<option>Jordan</option>
+					<option>Kazakhstan</option>
+					<option>Kenya</option>
+					<option>Kiribati</option>
+					<option>Korea, Democratic People's Republic of</option>
+					<option>Korea, Republic of</option>
+					<option>Kuwait</option>
+					<option>Kyrgyzstan</option>
+					<option>Lao People's Democratic Republic</option>
+					<option>Latvia</option>
+					<option>Lebanon</option>
+					<option>Lesotho</option>
+					<option>Liberia</option>
+					<option>Libya</option>
+					<option>Liechtenstein</option>
+					<option>Lithuania</option>
+					<option>Luxembourg</option>
+					<option>Macao</option>
+					<option>Macedonia, the former Yugoslav Republic of</option>
+					<option>Madagascar</option>
+					<option>Malawi</option>
+					<option>Malaysia</option>
+					<option>Maldives</option>
+					<option>Mali</option>
+					<option>Malta</option>
+					<option>Marshall Islands</option>
+					<option>Martinique</option>
+					<option>Mauritania</option>
+					<option>Mauritius</option>
+					<option>Mayotte</option>
+					<option>Mexico</option>
+					<option>Micronesia, Federated States of</option>
+					<option>Moldova, Republic of</option>
+					<option>Monaco</option>
+					<option>Mongolia</option>
+					<option>Montenegro</option>
+					<option>Montserrat</option>
+					<option>Morocco</option>
+					<option>Mozambique</option>
+					<option>Myanmar</option>
+					<option>Namibia</option>
+					<option>Nauru</option>
+					<option>Nepal</option>
+					<option>Netherlands</option>
+					<option>New Caledonia</option>
+					<option>New Zealand</option>
+					<option>Nicaragua</option>
+					<option>Niger</option>
+					<option>Nigeria</option>
+					<option>Niue</option>
+					<option>Norfolk Island</option>
+					<option>Northern Mariana Islands</option>
+					<option>Norway</option>
+					<option>Oman</option>
+					<option>Pakistan</option>
+					<option>Palau</option>
+					<option>Palestinian Territory, Occupied</option>
+					<option>Panama</option>
+					<option>Papua New Guinea</option>
+					<option>Paraguay</option>
+					<option>Peru</option>
+					<option>Philippines</option>
+					<option>Pitcairn</option>
+					<option>Poland</option>
+					<option>Portugal</option>
+					<option>Puerto Rico</option>
+					<option>Qatar</option>
+					<option>Réunion</option>
+					<option>Romania</option>
+					<option>Russian Federation</option>
+					<option>Rwanda</option>
+					<option>Saint Barthélemy</option>
+					<option>Saint Helena, Ascension and Tristan da Cunha</option>
+					<option>Saint Kitts and Nevis</option>
+					<option>Saint Lucia</option>
+					<option>Saint Martin (French part)</option>
+					<option>Saint Pierre and Miquelon</option>
+					<option>Saint Vincent and the Grenadines</option>
+					<option>Samoa</option>
+					<option>San Marino</option>
+					<option>Sao Tome and Principe</option>
+					<option>Saudi Arabia</option>
+					<option>Senegal</option>
+					<option>Serbia</option>
+					<option>Seychelles</option>
+					<option>Sierra Leone</option>
+					<option>Singapore</option>
+					<option>Sint Maarten (Dutch part)</option>
+					<option>Slovakia</option>
+					<option>Slovenia</option>
+					<option>Solomon Islands</option>
+					<option>Somalia</option>
+					<option>South Africa</option>
+					<option>South Georgia and the South Sandwich Islands</option>
+					<option>South Sudan</option>
+					<option>Spain</option>
+					<option>Sri Lanka</option>
+					<option>Sudan</option>
+					<option>Suriname</option>
+					<option>Svalbard and Jan Mayen</option>
+					<option>Swaziland</option>
+					<option>Sweden</option>
+					<option>Switzerland</option>
+					<option>Syrian Arab Republic</option>
+					<option>Taiwan, Province of China</option>
+					<option>Tajikistan</option>
+					<option>Tanzania, United Republic of</option>
+					<option>Thailand</option>
+					<option>Timor-Leste</option>
+					<option>Togo</option>
+					<option>Tokelau</option>
+					<option>Tonga</option>
+					<option>Trinidad and Tobago</option>
+					<option>Tunisia</option>
+					<option>Turkey</option>
+					<option>Turkmenistan</option>
+					<option>Turks and Caicos Islands</option>
+					<option>Tuvalu</option>
+					<option>Uganda</option>
+					<option>Ukraine</option>
+					<option>United Arab Emirates</option>
+					<option>United Kingdom</option>
+					<option>United States</option>
+					<option>United States Minor Outlying Islands</option>
+					<option>Uruguay</option>
+					<option>Uzbekistan</option>
+					<option>Vanuatu</option>
+					<option>Venezuela, Bolivarian Republic of</option>
+					<option>Viet Nam</option>
+					<option>Virgin Islands, British</option>
+					<option>Virgin Islands, U.S.</option>
+					<option>Wallis and Futuna</option>
+					<option>Western Sahara</option>
+					<option>Yemen</option>
+					<option>Zambia</option>
+					<option>Zimbabwe</option>
+				</select>
+
+
+
+				</select><br><br>
+			</td>
+			<td>
+				<select class = "select2" name="category">
+					<option  selected> Any Category</option>
+					<option >Accounting/Finance/Auditing</option>
+					<option >Admin/Clerk/Office Assistant</option>
+					<option >Agriculture/Dairy/Fisheries</option>
+					<option >Apparel/Garment/Clothing</option>
+					<option >Architecture/Interior/Design</option>
+					<option >Automotive/Aviation</option>
+					<option >Banking/Finance</option>
+					<option >BPO/KPO</option>
+					<option >Business Development/Strategy/Corporate Planning</option>
+					<option >Carpentry/Woodwork/Furniture</option>
+					<option >Cashier</option>
+					<option >Cleaning/Maintenance</option>
+					<option >Construction/Civil Engineering/QS</option>
+					<option >Consultancy/Coordination</option>
+					<option >Customer Relations/Public Relations</option>
+					<option >Customer Support/Call Centre</option>
+					<option >Data Entry/Data Formatting/Type Setting/</option>
+					<option >Data Entry/Payroll</option>
+					<option >Design/Art/Photography</option>
+					<option >Driver/Chauffeur/Transport</option>
+					<option >Education/Teaching/Academic</option>
+					<option >Electronics/Electrical</option>
+					<option >Energy/Utilities</option>
+					<option >Engineering</option>
+					<option >Fashion/Design/Beauty</option>
+					<option >Food/Beverage/Catering</option>
+					<option >General labor/Other</option>
+					<option >Hospitality/Tourism</option>
+					<option >Hotels/Restaurants</option>
+					<option >HR/Recruitment/Training</option>
+					<option >Imports/Exports/Trading</option>
+					<option >Insurance</option>
+					<option >IT/Hardware/Network/System Admin</option>
+					<option >IT/Programming</option>
+					<option >IT/Software/Web/Database/QA</option>
+					<option >Legal/Law/Risk/Compliance</option>
+					<option >Leisure/Tourism/Travel</option>
+					<option >Lifeguard/Safety/First Aid</option>
+					<option >Logistics/Warehouse/Transport</option>
+					<option >Maintenance/Technical/Repair</option>
+					<option >Management/Analysts</option>
+					<option >Manufacturing/Industrial/Operations</option>
+					<option >Mason/Plumber/Helper</option>
+					<option >Medical/Health/Pharmaceutical</option>
+					<option >Motor Mechanics</option>
+					<option >Multimedia/Animations/Graphic Designing</option>
+					<option >Office Admin/Secretarial/Receptionist</option>
+					<option >Other</option>
+					<option >Project Management</option>
+					<option >Psychology/Counseling</option>
+					<option >Quality Control &amp; Assurance</option>
+					<option >R&amp;D/Science/Research</option>
+					<option >Retail/Trading/Services</option>
+					<option >Sales/Marketing/Merchandising</option>
+					<option >Seaman/Sailor/Marine</option>
+					<option >Security</option>
+					<option >Store/Warehouse/Inventory</option>
+					<option >Supervision/Quality Control</option>
+					<option >Telecommunication/Network</option>
+					<option >Training/Development/Coaching</option>
+					<option >Transport/Logistics</option>
+					<option >Welder/Painter/Helper</option>
+
+				</select><br><br>
+			</td>
+		</tr>
+
+		<tr>
+			<th align = "left">
+				<label>JOB TYPE (Optional) </label>
+			</th>
+			<th align = "left">
+				<label> AGE </label>
+			</th>
+		</tr>
+
+		<tr>
+			<td>
+				<select class = "select1" name="jobtype" >
+					<option>select the job type</option> <br>
+					<option>Part-Time </option> <br>
+					<option> Full-Time</option> <br>
+				</select><br><br>
+			</td>
+			<td>
+				<select class = "select2" name="age">
+					<option >select your range of age</option> <br>
+					<option >18-30</option> <br>
+					<option >31-40</option> <br>
+					<option >41-50</option> <br>
+
+				</select><br><br>
+			</td>
+		</tr>
+
+		<tr>
+			<th align = "left">
+				<label>CONTACT NUMBER</label>
+			</th>
+			<th align = "left">
+				<label> MINIMUM QUALIFICATION LEVEL </label>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<input id = "type" name = "contcatno" class = "st3" pattern = "[0-9]{5,10}" placeholder = "Eg:(0094) XXX XXXX">
+			</td>
+			<td>
+				<input type = "radio" id = "qlevel" name = "qlevel" value = "o/l"checked> O/L
+				<input type = "radio" id = "qlevel" name = "qlevel" value = "a/l"> A/L
+				<input type = "radio" id = "qlevel" name = "qlevel" value = "diploma"> Diploma
+				<input type = "radio" id = "qlevel" name = "qlevel" value = "degree"> Degree
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<label> <b>COMPANY DETAILS</b></label><br>
+	<textarea type = "text" id = "details" name = "details" rows = "10" style = "width:99%" placeholder = "write a description of the company." required></textarea><br><br>
+
+	<label><b>IMAGE/LOGO </b></label><br>
+	<input type="file" name="fileToUpload" ><br>
+	(please upload an image or a logo of your company as further can identify.)
+	<br><br>
+
+	<hr size="3">
+	<table>
+		<tr>
+			<th align="left">PAYMENT METHOD</th>
+		</tr>
+		<tr>
+			<td>(Must display the payment method)</td>
+			<td>
+				<button>Change Payment Type</button>
+			</td>
+		</tr>
+
+		<tr>
+			<th><br>PAYMENT FOR PUBLICATION OF ADVERTISEMENT.</th>
+			<th align="left"><br>(Rs.1000/=)<input type = "checkbox" id = "policy" name = "policy" required onclick = "enableButton()" > </th>
+		</tr>
+	</table>
+	<hr size="5">
+
+
+	<input type = "submit" id = "button" name = "submit" value = "REGISTER NOW"  class="register">
+
+
+</form>
+</div>
+</div>
+<br>
+
+    <footer>
+    <div>
+      <a href="#"><img src="../images/facebook.png" alt="facebook" height="30" width="30"></a>
+      <a href="#"><img src="../images/instagram.png" alt="facebook" height="30" width="30"></a>
+      <a href="#"><img src="../images/google-plus.png" alt="facebook" height="30" width="30"></a>
+      <a href="#"><img src="../images/twitter.png" alt="facebook" height="30" width="30"></a>
+            <br><br>
+    <img src="../images/payment.png" alt="facebook" height="30" width="150">
+    </div>
+
+    <div class="dv2">
+
+      GETJOBS.lK <br>
+      117/8 Hunupitiya lake,<br>
+      Colombo 02,<br>
+      Sri Lanka.<br>
+      info@getjobs.lk <br>
+
+    </div>
+
+    <div class="dv3">
+
+    Site Map <br>
+    <ul class="whit">
+      <li class="whit"><a class="whit" href="home.html">Home</a></li>
+      <li class="whit"><a class="whit" href="#">browse job</a></li>
+      <li class="whit"><a class="whit" href="#">post a job</a></li>
+      <li class="whit"><a class="whit" href="#">contact us</a></li>
+      <li class="whit"><a class="whit" href="about us.html">about us</a></li>
+      <li class="whit"><a class="whit" href="#">profile</a></li>
+      <li class="whit"><a class="whit"href="#">job list</a></li>
+    </ul>
+
+  </div>
+
+  <p class="des">About GETJOBS.lk <br><br>
+Post your first job for Free with GETJOBS.lk <br>
+Candidates Submit your CV and be contacted by Employers.<br>
+ Search Jobs all across Sri Lanka and apply online.</p>
+
+    </footer>
+
+
+
+  <p class="colo">© 2020 GETJOBS.lk - ALL RIGHTS RESERVED.</p>
+
+  </body>
+</html>

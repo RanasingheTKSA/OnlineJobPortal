@@ -1,0 +1,433 @@
+
+body{
+  margin:0;
+  padding: 0;
+  /*background-color:#d9dddc;*/
+  background-image: url("../images/homepage-background.png");
+  padding-top: 141px;
+}
+
+li,a,div{
+  font-size: 16px;
+  color: black;
+}
+
+.navg li a button{
+  color:black;
+  font-weight: bold;
+}
+
+.dv1,.dv2 ,.dv3,.whit,.des{
+  color:white;
+  font-size: 20px;
+}
+
+.colo{
+  color: white;
+  background-color:#0492c2;
+  text-align: center;
+  font-size: 18;
+}
+
+.whit li a:hover{
+  text-decoration: underline;
+}
+
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 10px 177px 5px 10%;
+  position: fixed;
+  top:0;
+  /*background-image: url("../images/homepage-background.png");*/
+  background-color:white;
+  margin: 0px;
+  border-bottom: 2px solid black;
+  opacity: 100%;
+  width:100%;
+  }
+
+.other{
+  width: 400px;
+  padding-left: 50px;
+}
+.logo
+{
+	margin-left:-150px;
+	margin-right:-150px;
+}
+
+.notification{
+  padding-right:40px;
+  padding-bottom: 15px;
+}
+
+nav{
+  padding-right: -600px;
+  width:800px;
+}
+
+.dv1{
+    width:500px;
+
+
+}
+
+footer{
+  display: flex;
+  background-color:#363636;
+  justify-content: space-between;
+  align-items:center;
+  padding: 30px 10%;
+}
+
+.logo,.profile,.notification{
+  cursor: pointer;
+}
+
+.navg{
+  list-style: none;
+}
+
+.navg li{
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: transparent;
+  overflow: hidden;
+  text-decoration-style: solid;
+  font-size:30px;
+}
+
+.navg li a{
+  transition: all 0.3s ease 0s;
+  margin: 10;
+  padding: 5;
+  overflow: hidden;
+}
+
+
+
+.but1 button:hover{
+  background-color: green;
+  box-sizing: border-box;
+}
+
+li a button:hover{
+  /*background-color: blue;*/
+  color: blue;
+}
+
+li a button{
+  border:none;
+  /*background-color:#007aff;*/
+  background-color: transparent;
+  cursor: pointer;
+  padding: 9px 15px;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.but1 button{
+  background-color:lightgreen;
+  border-radius:50px;
+  cursor: pointer;
+  padding: 9px 15px;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+  border-width: thin;
+}
+
+.but2{
+  background-color:red;
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 25px;
+  color: white;
+}
+
+.but2:hover{
+  background-color:darkred;
+}
+.btn-sec{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding-bottom:100px;
+
+}
+li a{
+  text-decoration: none;
+}
+
+hr{
+  background-color: black;
+
+}
+
+.p1
+{
+	font-style:italic;
+	font-size:20px;
+}
+
+.tr
+{
+  background-color: bisque;
+}
+
+/*remover account  div width sizes*/
+.width
+{
+  width: 15%;
+}
+.width1
+{
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.productdata
+{
+	background-color:black;
+	padding:5px;
+	border-radius: 15px;
+}
+.productdata1
+{
+  background-color: white;
+  
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.st1
+{
+	height:25px;
+	width :99%;
+}
+.st2
+{
+	height:25px;
+	width :48.25%;
+}
+.st3
+{
+	height:25px;
+	width :94%;
+}
+.select1
+{
+	height:30px;
+	width :94.5%;
+}
+.select2
+{
+	height:30px;
+	width :99.5%;
+}
+
+ul.pay1
+{
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+	background-color:black;
+	overflow:hidden;
+}
+li.pay2
+{
+	float:none;
+	margin:0;
+	padding:0;
+
+}
+
+.form
+{
+  width : 95%;
+  padding: 35px 35px 35px 35px;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+  
+}
+
+div.Submit:hover
+{
+  background-color: gray;
+}
+.imageb
+{
+  border-radius: 10px;
+  border: 5px;
+}
+
+.productdata9
+{
+	background-color:white;
+	padding:2.5px;
+  border-radius: 15px;
+}
+.productdata10
+{
+	background-color:black;
+	padding:5px;
+  border-radius: 20px;
+  width: 1000px;
+}
+
+
+
+
+/*payment page*/
+
+.h3_s
+{
+  width : 50%;
+  padding: 35px 35px 35px 35px;
+  border-radius: 40px;
+  background:white;
+ 
+}
+
+.div1
+{
+  width: 80%;
+  height: 100px;
+  background-color:black;
+	padding:3.5px;
+  border-radius: 15px;
+  
+}
+.div12
+{
+  width: 60%;
+  background-color:black;
+	padding:3.5px;
+  border-radius: 15px;
+  
+}
+
+.tabl1
+{
+  width: 100%;
+}
+.productdata11
+{
+	background-color:white;
+	padding: 10px;
+	border-radius: 10px;
+}
+.productdata111
+{
+	background-color:white;
+	padding: 20px;
+  border-radius: 10px;
+
+
+}
+
+.th1
+{
+  width: 55%;
+}
+
+ul.pay12
+{
+	list-style-type:none;
+	margin:10px;
+	padding:0px;
+	background-color:black;
+  overflow:hidden;
+  width: 90px;
+  border-radius: 10px;
+}
+
+div.Submit1:hover
+{
+  background-color: gray;
+  border-radius: 20px;
+  width: 100%;
+}
+.register
+{
+  background:#D5F5E3;
+  border: black;
+  border-radius: 20px;
+  height: 30px;
+  opacity: 0.8px;
+}
+
+
+
+/*for only button in payment page*/
+
+.button
+{
+  position: relative;
+  text-align: center;
+  width: 125px;
+  padding: 2.5px;
+ 
+  color: #15f4ee;
+  font-family: poppins;
+  font-weight: 400px;
+  border: 2.5px solid  black;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition:1.5s;
+}
+
+
+.button:hover
+{
+  box-shadow: 0 5px 50px 0  #15f4ee  inset, 0 5px 50px #15f4ee;
+              0 5px 50px 0  #15f4ee  inset, 0 5px 50px  #15f4ee;
+}
+
+
+/*for only remove account page detials*/
+.divremove
+{
+  background: #ffffff;
+  border-radius: 15px;
+  width: 60%;
+}
+.table12
+{
+  border-radius: 15px;
+}
+.table12 li{
+  padding-left: 10px;
+  list-style: none;
+}
+.buton1
+{
+  background-color: transparent;
+}
+.buton1:hover
+{
+  color:blue;
+  overflow: hidden;
+  background-color: beige;
+}
